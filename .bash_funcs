@@ -1,0 +1,21 @@
+
+function ebash() {
+   nano /Users/zooxmusic/.bash_profile
+}
+
+
+function ignore() {
+        echo $1 >> /Users/zooxmusic/.gitignore_global
+}
+function gignore() {
+        nano /Users/zooxmusic/.gitignore_global
+}
+function ref() {
+   . /Users/zooxmusic/.bash_profile
+}
+function ealias() {
+   nano /Users/zooxmusic/.aliases
+}
+function efuncs() {
+   nano /Users/zooxmusic/.funcs
+}
