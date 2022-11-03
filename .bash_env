@@ -1,0 +1,14 @@
+# export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8.0_333)
+# export JAVA_11_HOME=$(/usr/libexec/java_home -v11.0.16.1)
+# export JAVA_17_HOME=$(/usr/libexec/java_home -v17.0.4.1)
+# export JAVA_19_HOME=$(/usr/libexec/java_home -v19.0.1)
+# export JAVA_17_BELLSOFT_HOME=$(/usr/libexec/java_home -v17.0.4.1+1-LTS)
+export BASH_SILENCE_DEPRECATION_WARNING=1
+export BASH_SILENCE_DEPRECATION_WARNING=1
+#export SPRING_PROFILES_ACTIVE=
+# export JAVA_HOME=$JAVA_17_HOME
+# export GROOVY_HOME=/Volumes/Data/Development/Resources/Libraries/Groovy/groovy-4.0.6
+# export PYTHON_HOME=/Users/zooxmusic/Library/Python/3.9
+# export PATH=$PYTHON_HOME/bin:$GROOVY_HOME/bin:$PATH
+# export GLAMOUR_STYLE=dracula
+
