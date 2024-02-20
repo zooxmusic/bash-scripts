@@ -32,8 +32,9 @@ export PATH="/usr/local/opt/gradle/libexec/bin:/usr/local/opt/maven/libexec/bin:
 OPENAI_API_KEY=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
 QT_PATH="/Users/zooxmusic/Qt/6.6.2/macos"
 export QT_DIR="$QT_PATH/lib/cmake/Qt6"
+PYTHON_PATH="/Users/zooxmusic/Library/Python/3.11"
 
-export PATH="$QT_PATH/bin:$PATH"
+export PATH="$PYTHON_PATH/bin:$QT_PATH/bin:$PATH"
 export LDFLAGS="$LDFLAGS -L$QT_PATH/lib"
 export CPPFLAGS="$CPPFLAGS -I$QT_PATH/include"
 export PKG_CONFIG_PATH="$QT_PATH/lib/pkgconfig:$PKG_CONFIG_PATH"
