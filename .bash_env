@@ -11,4 +11,4 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # export PYTHON_HOME=/Users/zooxmusic/Library/Python/3.9
 # export PATH=$PYTHON_HOME/bin:$GROOVY_HOME/bin:$PATH
 # export GLAMOUR_STYLE=dracula
-
+export HOMEBREW_NO_ENV_HINTS=TRUE

@@ -3,4 +3,4 @@ if [ -f ~/.bash_profile ]; then
 fi
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+# source <(ng completion script)
