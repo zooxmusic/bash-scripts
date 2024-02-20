@@ -32,6 +32,8 @@ export PATH="/usr/local/opt/gradle/libexec/bin:/usr/local/opt/maven/libexec/bin:
 OPENAI_API_KEY=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
 QT_PATH="/Users/zooxmusic/Qt/6.6.2/macos"export QT_DIR="$QT_PATH/lib/cmake/Qt6"
 PYTHON_PATH="/Users/zooxmusic/Library/Python/3.11"
+HOMEBREW_PREFIX="/usr/local"
+export PYTHONPATH=$HOMEBREW_PREFIX/opt/protobuf@21/lib/python3.12/site-packages
 export GST_PLUGIN_PATH="~/.local/lib/gstreamer-1.0"
 export PATH="/usr/local/sbin:$PYTHON_PATH/bin:$QT_PATH/bin:$PATH"
 export LDFLAGS="$LDFLAGS -L$QT_PATH/lib"
