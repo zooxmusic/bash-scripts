@@ -14,7 +14,7 @@ alias rocket="dev; cd RocketShow/rocketshow"
 alias ee="dev; cd EqualExperts"
 alias ai="dev; cd OpenAI"
 alias gitignore="nano ~/.gitignore_global"
-
+alias python=python3
 
 # GIT Aliases
 alias pull="git pull"
