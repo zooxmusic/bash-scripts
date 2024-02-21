@@ -30,13 +30,18 @@ export FLUTTER="/Users/zooxmusic/Development/OpenAI/AutoGPT/frontend/macos/Flutt
 export PATH="/usr/local/opt/gradle/libexec/bin:/usr/local/opt/maven/libexec/bin:$JAVA_HOME/bin:$FLUTTER:$PATH"
 
 OPENAI_API_KEY=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
-QT_PATH="/Users/zooxmusic/Qt/6.6.2/macos"export QT_DIR="$QT_PATH/lib/cmake/Qt6"
-PYTHON_PATH="/Users/zooxmusic/Library/Python/3.11"
+#PYTHON_PATH="/Users/zooxmusic/Library/Python/3.11"
 HOMEBREW_PREFIX="/usr/local"
-export PYTHONPATH=$HOMEBREW_PREFIX/opt/protobuf@21/lib/python3.12/site-packages
-GSTREAMER_PATH="/Library/Frameworks/GStreamer.framework/Versions/1.0"
-export GST_PLUGIN_PATH="~/.local/lib/gstreamer-1.0"
-export PATH="$GSTREAMER_PATH/bin:/usr/local/sbin:$PYTHON_PATH/bin:$QT_PATH/bin:$PATH"
-export LDFLAGS="$LDFLAGS -L$QT_PATH/lib"
-export CPPFLAGS="$CPPFLAGS -I$QT_PATH/include"
-export PKG_CONFIG_PATH="$QT_PATH/lib/pkgconfig:$PKG_CONFIG_PATH"
+#export PYTHONPATH=$HOMEBREW_PREFIX/opt/protobuf@21/lib/python3.12/site-packages
+
+GSTREAMER_ROOT_PATH="/Library/Frameworks/GStreamer.framework"
+GSTREAMER_VERSIONS_PATH="$GSTREAMER_ROOT_PATH/Versions"
+GSTREAMER_CURRENT_PATH="$GSTREAMER_VERSIONS_PATH/Current"
+GSTREAMER_HEADERS_PATH="$GSTREAMER_ROOT_PATH/Headers"
+GSTREAMER_COMMANDS_PATH="$GSTREAMER_ROOT_PATH/Commands"
+GSTREAMER_PATH="$GSTREAMER_CURRENT_PATH/bin"
+export GST_PLUGIN_PATH="~/.local/lib/gstreamer-1.0/plugins"
+export PATH="$GSTREAMER_PATH:$GSTREAMER_HEADERS_PATH:$GSTREAMER_COMMANDS_PATH:/usr/local/sbin:$GST_PLUGIN_PATH:$PATH"
+#export LDFLAGS="$LDFLAGS -L$QT_PATH/lib"
+#export CPPFLAGS="$CPPFLAGS -I$QT_PATH/include"
+#export PKG_CONFIG_PATH="$QT_PATH/lib/pkgconfig:$PKG_CONFIG_PATH"
