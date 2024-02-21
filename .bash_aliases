@@ -15,7 +15,7 @@ alias ee="dev; cd EqualExperts"
 alias ai="dev; cd OpenAI"
 alias gitignore="nano ~/.gitignore_global"
 alias python="/usr/local/bin/python3" 
-alias python2="/Users/zooxmuisc/.pyenv/versions/2.7.18/bin/python"
+alias python2="/Users/zooxmusic/.pyenv/versions/2.7.18/bin/python"
 alias pip="/usr/local/bin/pip3" 
 
 # GIT Aliases
