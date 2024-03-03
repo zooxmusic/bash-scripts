@@ -39,3 +39,13 @@ function acp() {
    git commit -m \""$1"\"
    git push
 }
+
+function ac() {
+   if test  -z "$1"
+   then
+      echo 'You must provide a comment jerky!'
+      return
+   fi
+   git add .
+   git commit -m \""$1"\"
+}
