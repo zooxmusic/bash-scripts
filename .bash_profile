@@ -26,7 +26,8 @@ eval "$(gh completion -s bash)"
 #export PATH
 
 #export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/graalvm-jdk-22.0.1+8.1/Contents/Home"
+#export JAVA_HOME="/Library/Java/JavaVirtualMachines/graalvm-jdk-22.0.1+8.1/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/graalvm-jdk-17.0.11+7.1/Contents/Home"
 export FLUTTER="/Users/zooxmusic/Development/OpenAI/AutoGPT/frontend/macos/Flutter"
 export PATH="$JAVA_HOME/bin:/usr/local/opt/gradle/libexec/bin:/usr/local/opt/maven/libexec/bin:$FLUTTER:$PATH"
 
