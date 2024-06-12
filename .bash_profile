@@ -25,9 +25,10 @@ eval "$(gh completion -s bash)"
 #PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 #export PATH
 
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"
+#export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/graalvm-jdk-22.0.1+8.1/Contents/Home"
 export FLUTTER="/Users/zooxmusic/Development/OpenAI/AutoGPT/frontend/macos/Flutter"
-export PATH="/usr/local/opt/gradle/libexec/bin:/usr/local/opt/maven/libexec/bin:$JAVA_HOME/bin:$FLUTTER:$PATH"
+export PATH="$JAVA_HOME/bin:/usr/local/opt/gradle/libexec/bin:/usr/local/opt/maven/libexec/bin:$FLUTTER:$PATH"
 
 OPENAI_API_KEY=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
 #PYTHON_PATH="/Users/zooxmusic/Library/Python/3.11"
