@@ -1,23 +1,47 @@
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+# auto-completion
+if [ -f /usr/local/etc/profile.d/bash_completion.sh ]; then
+  . /usr/local/etc/profile.d/bash_completion.sh
+fi
 
-source ~/.git-completion.bash
-source ~/.bash_prompt
 source ~/.bash_aliases
+source ~/.bash_env
 source ~/.bash_funcs
+source ~/.bash_prompt
+source ~/.git-completion.bash
+eval "$(gh completion -s bash)"
 
 
-export BASH_SILENCE_DEPRECATION_WARNING=1
-export PATH="/usr/local/opt/ncurses/bin:$PATH"
-export PATH="/usr/local/Cellar/nano/5.1/bin:$PATH"
-export BASH_SILENCE_DEPRECATION_WARNING=1
-export SHARP_IGNORE_GLOBAL_LIBVIPS=1
-export PATH=$PATH:/usr/local/bin/gradle
-export PATH=/usr/local/bin:$PATH
 
+# Setting PATH for Python 3.9
+# The original version is saved in .bash_profile.pysave
+#PATH="/Users/zooxmusic/Library/Python/3.9/bin:${PATH}"
+#export PATH
+#export python2=python
+#export PATH="${HOME}/.pyenv/shims:${PATH}"
+#export python2=/Library/Frameworks/Python.framework/Versions/Current/2.7
 
-function js2ts() {
-	find app/src -name "*.js" -exec sh -c 'mv "$0" "${0%.js}.ts"' {} \;
-}
+# Setting PATH for Python 2.7
+# The original version is saved in .bash_profile.pysave
+#PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+#export PATH
 
-# Added by Amplify CLI binary installer
-export PATH="$HOME/.amplify/bin:$PATH"
+#export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"
+#export JAVA_HOME="/Library/Java/JavaVirtualMachines/graalvm-jdk-22.0.1+8.1/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/graalvm-jdk-17.0.11+7.1/Contents/Home"
+export FLUTTER="/Users/zooxmusic/Development/OpenAI/AutoGPT/frontend/macos/Flutter"
+export PATH="$JAVA_HOME/bin:/usr/local/opt/gradle/libexec/bin:/usr/local/opt/maven/libexec/bin:$FLUTTER:$PATH"
+
+OPENAI_API_KEY=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
+#PYTHON_PATH="/Users/zooxmusic/Library/Python/3.11"
+HOMEBREW_PREFIX="/usr/local"
+#export PYTHONPATH=$HOMEBREW_PREFIX/opt/protobuf@21/lib/python3.12/site-packages
+
+GSTREAMER_ROOT_PATH="/Library/Frameworks/GStreamer.framework"
+GSTREAMER_VERSIONS_PATH="$GSTREAMER_ROOT_PATH/Versions"
+GSTREAMER_CURRENT_PATH="$GSTREAMER_VERSIONS_PATH/Current"
+GSTREAMER_HEADERS_PATH="$GSTREAMER_ROOT_PATH/Headers"
+GSTREAMER_COMMANDS_PATH="$GSTREAMER_ROOT_PATH/Commands"
+GSTREAMER_PATH="$GSTREAMER_CURRENT_PATH/bin"
+export GST_PLUGIN_PATH="~/.local/lib/gstreamer-1.0/plugins"
+JACOCO_PATH="/Users/zooxmusic/Development/Resources/JaCoCo/0.8.11/"
+export PATH="$GSTREAMER_PATH:$GSTREAMER_HEADERS_PATH:$GSTREAMER_COMMANDS_PATH:/usr/local/sbin:$GST_PLUGIN_PATH:$JACOCO_PATH:$PATH"

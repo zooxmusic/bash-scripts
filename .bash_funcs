@@ -1,21 +1,51 @@
-
-function ebash() {
-   nano /Users/zooxmusic/.bash_profile
+function ref() {
+  source ~/.bash_profile
 }
 
+function envi() {
+  nano ~/.bash_env
+}
 
 function ignore() {
-        echo $1 >> /Users/zooxmusic/.gitignore_global
+   echo $1 >> ~/.gitignore_global
 }
-function gignore() {
-        nano /Users/zooxmusic/.gitignore_global
+
+function aliases() {
+   nano ~/.bash_aliases
 }
-function ref() {
-   . /Users/zooxmusic/.bash_profile
+
+function func() {
+   nano ~/.bash_funcs
 }
-function ealias() {
-   nano /Users/zooxmusic/.aliases
+
+function prof() {
+   nano ~/.bash_profile
 }
-function efuncs() {
-   nano /Users/zooxmusic/.funcs
+
+function startMysql() {
+    docker run --detach --name=mysqlcontainer$RANDOM -p 3306:3306 --env="MYSQL_ROOT_PASSWORD=bszucs"-d mysql/ mysql:latest
+}
+
+function startMysqlCli() {
+    docker exec -it $1 bash
+}
+function acp() {
+   if test  -z "$1"
+   then
+      echo 'You must provide a comment jerky!'
+      return
+   fi
+   git add .
+   git commit -m \""$1"\"
+   git push
+}
+
+function ac() {
+   if test  -z "$1"
+   then
+      echo 'You must provide a comment jerky!'
+      return
+   fi
+   git add .
+   git commit -m \""$1"\"
 }
